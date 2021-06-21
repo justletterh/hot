@@ -2,8 +2,9 @@ import discord,jishaku
 from discord.ext import commands
 from owo import owo
 import psutil as _
+from utils import *
 
-token = "ODU2NTgzMDY1MzQyMDUwMzM0.YNDJJQ.5IRnKzi3F5KCD07JXhlbsqeSkYg"
+token = read("./token.txt")
 pfx = "h."
 client = commands.Bot(case_insensitive=True,command_prefix=pfx,intents=discord.Intents.all(),help_command=commands.DefaultHelpCommand(no_category="Default"))
 
